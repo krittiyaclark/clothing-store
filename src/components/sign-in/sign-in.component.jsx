@@ -4,6 +4,9 @@ import { Row, Col } from 'react-bootstrap';
 import FormInput from '../form-input/form-input.component';
 import CustomButton from '../custom-button/custom-button.component';
 
+import { signInWithGoogle } from '../../firebase/firebase.utils';
+
+import './sign-in.styles.scss';
 class SignIn extends React.Component {
 	constructor(props) {
 		super(props);
@@ -50,9 +53,14 @@ class SignIn extends React.Component {
 							label='password'
 							required
 						/>
-						<CustomButton type='submit' value='Submit Form'>
-							Sign in
-						</CustomButton>
+						<div className='buttons'>
+							<CustomButton type='submit' value='Submit Form'>
+								Sign in
+							</CustomButton>
+							<CustomButton onClick={signInWithGoogle} isGoogleSignIn>
+								Sign In With Google
+							</CustomButton>
+						</div>
 					</form>
 				</Col>
 			</Row>

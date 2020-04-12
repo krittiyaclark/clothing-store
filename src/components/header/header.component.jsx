@@ -3,9 +3,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Navbar, Nav } from 'react-bootstrap';
 import { ReactComponent as Logo } from '../../assests/crown.svg';
+import { auth } from '../../firebase/firebase.utils';
+
 import './header.styles.scss';
 
-const Header = () => (
+const Header = ({ currentUser }) => (
 	<Container>
 		<Navbar sticky='top' expand='lg' className='header'>
 			<Link to='/' className='logo-container'>
@@ -22,9 +24,16 @@ const Header = () => (
 					<Link to='/contact' className='option'>
 						Contact
 					</Link>
-					<Link to='/signin' className='option'>
-						SignIn
-					</Link>
+					{currentUser ? (
+						<div className='option' onClick={() => auth.signOut()}>
+							{' '}
+							Sign Out
+						</div>
+					) : (
+						<Link to='/signin' className='option'>
+							Sign In
+						</Link>
+					)}
 				</Nav>
 			</Navbar.Collapse>
 		</Navbar>
