@@ -1,15 +1,17 @@
 import React from 'react';
 
-import Container from 'react-bootstrap/Container';
+import { Container, Row } from 'react-bootstrap';
 import SignIn from '../../components/sign-in/sign-in.component';
+import SignUp from '../../components/sign-up/sign-up.component';
 
 import './sign-in-and-sign-up.component';
 
 const SignInAndSignUp = () => (
 	<Container>
-		<div className='sign-in-and-sign-up'>
+		<Row>
 			<SignIn />
-		</div>
+			<SignUp />
+		</Row>
 	</Container>
 );
 
