@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Row } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import CollectionItem from '../collection-item/collection-item.componet';
 
 import './collection-preview.componet';
@@ -13,7 +13,9 @@ const CollectionPreview = ({ title, items }) => (
 				{items
 					.filter((item, idx) => idx < 4)
 					.map((item) => (
-						<CollectionItem key={item.id} item={item} />
+						<Col md={3} key={item.id}>
+							<CollectionItem item={item} />
+						</Col>
 					))}
 			</Row>
 		</div>
