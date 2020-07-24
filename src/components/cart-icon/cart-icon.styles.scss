@@ -4,7 +4,7 @@
 	position: relative;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-end;
 	cursor: pointer;
 
 	.shopping-icon {
@@ -16,6 +16,7 @@
 		position: absolute;
 		font-size: 10px;
 		font-weight: bold;
+		right: 9px;
 		bottom: 12px;
 	}
 }

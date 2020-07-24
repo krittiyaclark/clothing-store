@@ -12,7 +12,7 @@ import './directory.styles.scss';
 
 const Directory = ({ sections }) => (
 	<Row>
-		<Col sm>
+		<Col>
 			<div className='directory-menu'>
 				{sections.map(({ id, ...otherSectionsProps }) => (
 					<MenuItem key={id} {...otherSectionsProps} />

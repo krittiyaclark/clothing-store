@@ -4,3 +4,23 @@
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
+
+/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+	.directory-menu {
+		flex-wrap: wrap;
+		justify-content: space-between;
+		height: 100vh;
+	}
+}
+
+/* Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+	.directory-menu {
+		flex-wrap: wrap;
+		justify-content: space-between;
+		height: 100vh;
+	}
+}

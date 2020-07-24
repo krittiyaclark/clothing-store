@@ -39,7 +39,7 @@ class SignIn extends React.Component {
 	render() {
 		const { email, password } = this.state;
 		return (
-			<Col sm={6} md={6}>
+			<Col md={6}>
 				<h2>I already have an account</h2>
 				<span>Sign in with your email and password</span>
 
