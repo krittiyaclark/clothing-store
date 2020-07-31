@@ -7,6 +7,10 @@ React-bootstrap and deploy the application on Heroku.
 
 Run this command `git clone https://github.com/krittiyaclark/clothing-store.git`
 
+## View live demo
+
+[live demo](https://clothing-store--live.herokuapp.com)
+
 ## Install dependencies
 
 In your terminal after you clone your project down, remember to run either
