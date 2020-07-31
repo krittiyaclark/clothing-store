@@ -1,7 +1,12 @@
 # clothing-store
 
-An e-commerce application using React, Redux, React Router, Firebase, Stripe,
-React-bootstrap and deploy the application on Heroku.
+This is an e-commerce clothing store website I built which is responsive. It has
+a lot of features including Google authentication for sign-in and sign-up, add
+item to cart, Firebase for storing the user and cart item data, and integrating
+payment methods with Stripe.
+
+I built with React, Redux, React Router, Firebase, Stripe, React-bootstrap and
+deploy the application on Heroku.
 
 ## How to clone
 
